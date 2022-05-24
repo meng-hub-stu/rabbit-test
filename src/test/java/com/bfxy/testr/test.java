@@ -38,7 +38,7 @@ public class test {
                     attributes,
                     0,
                     MessageType.RELIANT);
-            messageProducer.send(message, new SendCallback() {
+            messageProducer.send(message/*, new SendCallback() {
                 @Override
                 public void onSuccess() {
                     System.out.println("---回调成功");
@@ -48,7 +48,7 @@ public class test {
                 public void onFailure() {
                     System.out.println("---回调失败");
                 }
-            });
+            }*/);
             System.out.println("发送消息结束");
         }
         Thread.sleep(100000);
