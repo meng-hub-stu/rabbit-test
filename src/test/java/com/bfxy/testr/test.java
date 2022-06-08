@@ -31,9 +31,11 @@ public class test {
         for (int i= 0 ;i < 1; i++) {
             String uuid = UUID.randomUUID().toString();
             Map<String, Object> attributes = Maps.newConcurrentMap();
+            attributes.put("age", 12);
+            attributes.put("name", "张三");
             Message message = new Message(
                     uuid,
-                    "exchange-1",
+                    "exchange-2",
                     "springboot.*",
                     attributes,
                     0,
